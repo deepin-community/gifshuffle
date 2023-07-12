@@ -1,0 +1,4 @@
+version=4
+# Currently, no releases available at original upstream homepage.
+opts=dversionmangle=s/.*/0.No-Release/ \
+https://people.debian.org/~eriberto/ FakeWatchNoUpstreamReleaseForThisPackage-(\d\S+)\.gz
