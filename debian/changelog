@@ -1,5 +1,5 @@
-template-repository (1.0-1) unstable; urgency=medium
+gifshuffle (2.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Initial release (Closes: #314915)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Gustavo Soares de Lima <gustavo@logicus.com.br>  Tue, 16 Aug 2016 02:49:10 +0000

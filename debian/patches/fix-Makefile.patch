@@ -1,0 +1,22 @@
+Description: improve GCC hardening.
+Author: Gustavo Soares de Lima <gustavo@logicus.com.br>
+Last-Update: 2016-08-24
+Index: gifshuffle-2.0/Makefile
+===================================================================
+--- gifshuffle-2.0.orig/Makefile
++++ gifshuffle-2.0/Makefile
+@@ -4,12 +4,12 @@
+ #
+ 
+ CC =		gcc
+-CFLAGS =	-O -Wall
++CFLAGS +=	-O -Wall
+ 
+ OBJ =		main.o encrypt.o ice.o compress.o encode.o epi.o gif.o
+ 
+ gifshuffle:	$(OBJ)
+-		$(CC) -o $@ $(OBJ)
++		$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $(OBJ)
+ 
+ clean:
+ 		/bin/rm -f $(OBJ) gifshuffle
